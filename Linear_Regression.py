@@ -18,10 +18,12 @@ regressor.fit(x_train,y_train)
 y_train_pred = regressor.predict(x_train)
 y_test_pred = regressor.predict(x_test)
 
-#Training Data
+#Plotting Training Data
 plt.scatter(x_train, y_train, color = 'blue')
 plt.plot(x_train, y_train_pred, color = 'red')
+plt.savefig("outputs/Graph1.png")
 
-#Testing Data
+#Plotting Testing Data
 plt.scatter(x_test, y_test, color = 'blue')
 plt.plot(x_test, y_test_pred, color = 'red')
+plt.savefig("outputs/Graph2.png")
