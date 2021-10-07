@@ -21,9 +21,15 @@ y_test_pred = regressor.predict(x_test)
 #Plotting Training Data
 plt.scatter(x_train, y_train, color = 'blue')
 plt.plot(x_train, y_train_pred, color = 'red')
+plt.xlabel('Years Experience')
+plt.ylabel('Salary')
 plt.savefig("outputs/LR_Output_1.png")
+plt.show()
 
 #Plotting Testing Data
 plt.scatter(x_test, y_test, color = 'blue')
 plt.plot(x_test, y_test_pred, color = 'red')
+plt.xlabel('Years Experince')
+plt.ylabel('Salary')
 plt.savefig("outputs/LR_Output_2.png")
+plt.show()
